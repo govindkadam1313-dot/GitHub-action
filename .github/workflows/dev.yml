@@ -34,7 +34,7 @@ on:
 
 jobs:
   plan:
-    name: Terraform deploy
+    name: Terraform plan
     runs-on: ubuntu-latest
 
     env:
