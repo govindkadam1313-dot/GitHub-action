@@ -76,6 +76,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: us-east-1
+          role-session-name: github-actions-oidc-plan
 
       # Verify AWS authentication
       - name: Verify AWS Identity
@@ -115,6 +116,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: us-east-1
+          role-session-name: github-actions-oidc-apply
 
       # Verify AWS authentication
       - name: Verify AWS Identity
